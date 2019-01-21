@@ -47,6 +47,10 @@ Page({
         open: false,
         pages: ['canvas']
       }, {
+        id: 'study',
+        name: '研究',
+        pages: ['life-cycle']
+      }, {
         id: 'open',
         name: '开放能力',
         open: false,
