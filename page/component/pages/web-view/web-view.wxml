@@ -1,1 +1,9 @@
-<web-view src="https://developers.weixin.qq.com/miniprogram/introduction/"></web-view>
+<view class="container">
+  <web-view clss="web-view" src="http://192.168.50.197/kejianH5Demo/ "></web-view>
+  <view class="title">
+    <text>标题</text>
+  </view>
+  <view class="content">
+    <text>内容</text>
+  </view>
+</view>
