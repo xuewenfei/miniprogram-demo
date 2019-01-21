@@ -49,7 +49,8 @@ Page({
       }, {
         id: 'study',
         name: '研究',
-        pages: ['life-cycle']
+        open: false,
+        pages: ['life-cycle', 'wxgame']
       }, {
         id: 'open',
         name: '开放能力',
