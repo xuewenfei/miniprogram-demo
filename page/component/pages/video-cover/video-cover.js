@@ -2,7 +2,7 @@ Page({
   onShareAppMessage() {
     return {
       title: 'cover-view',
-      path: 'page/component/pages/cover-view/cover-view'
+      path: 'page/component/pages/cover-view/vidwo-cover'
     }
   },
 

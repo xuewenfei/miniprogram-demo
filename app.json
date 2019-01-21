@@ -29,6 +29,7 @@
     "page/component/pages/movable-view/movable-view",
     "page/component/pages/cover-view/cover-view",
     "page/component/pages/complex-cover/complex-cover",
+    "page/component/pages/video-cover/video-cover",
     "page/component/pages/rich-text/rich-text",
     "page/API/index",
     "page/API/pages/login/login",
