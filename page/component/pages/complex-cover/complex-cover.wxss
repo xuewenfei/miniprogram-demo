@@ -18,11 +18,25 @@
 }
 .question-container {
   padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.question-body {
+  background: rgba(26, 173, 25, 0.7);
+  height: 250rpx;
+}
+.question-options {
+  background: rgba(39, 130, 215, 0.7);
+  height: 100rpx;
 }
 
+button {
+  margin-top: 2rpx;
+  margin-bottom: 2prx;
+}
 video {
   width: 100%;
-  height: 300rpx;
+  height: 400rpx;
 }
 
 .demo-1 {

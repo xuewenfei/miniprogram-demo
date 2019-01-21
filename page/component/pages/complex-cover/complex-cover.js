@@ -1,18 +1,35 @@
-// page/component/pages/complex-cover/cover-view.js
+// page/component/pages/complex-cover/complex-cover.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    page1: true,
+    page2: false,
+    page3: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setTimeout(() => this.switchPage2(), 2000);
+  },
+  switchPage2: function () {
+    this.setData({
+      page1: false,
+      page2: true,
+      page3: false
+    })
+    setTimeout(() => this.switchPage3(), 4000);
+  },
+  switchPage3: function () {
+    this.setData({
+      page1: false,
+      page2: false,
+      page3: true
+    })
   },
 
   /**

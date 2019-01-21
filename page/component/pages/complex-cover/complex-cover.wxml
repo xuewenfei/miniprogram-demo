@@ -2,9 +2,12 @@
 <import src="../../../common/foot.wxml" />
 
 <view class="container">
-  <view class="page-body">
+  <view wx:if="{{page1}}" class="page1">
+    Loading...
+  </view>
+  <view wx:if="{{page2}}" class="page2 page-body">
     <view class="leftView">
-      <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls>
+      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" autoplay="{{true}}" controls="{{false}}">
         <cover-view class="cover-view">
           <cover-view class="question-container">
               <cover-view class="question-body">
@@ -37,5 +40,42 @@
         rightBottom
       </view>
     </view>
+  </view>
+  <view wx:if="{{page3}}" class="page3 page-body">
+    <view class="leftView">
+      <view class="rightTop">
+        rightTop
+      </view>
+      <view class="rightBottom">
+        rightBottom
+      </view>
+    </view>
+    <view class="rightView">
+      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" autoplay="{{true}}" controls="{{false}}">
+        <cover-view class="cover-view">
+          <cover-view class="question-container">
+              <cover-view class="question-body">
+                <cover-view>1、1 + 2 = ? </cover-view>
+                <cover-view>2、太简单了</cover-view>
+              </cover-view>
+              <cover-view class="question-options">
+                <cover-view>
+                  <button type="default" bindtap="default">
+                    A 3
+                  </button>
+                </cover-view>
+                <cover-view>
+                  <button type="default" bindtap="default">
+                    B 太难了，我不会
+                  </button>
+                </cover-view>
+              </cover-view>
+              <cover-view class="question-actions">
+              </cover-view>
+          </cover-view>
+        </cover-view>
+      </video>
+    </view>
+    
   </view>
 </view>
