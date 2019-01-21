@@ -1,3 +1,6 @@
+.container {
+  padding: 10rpx;
+}
 .page-body {
   display: flex;
   flex-direction: row;

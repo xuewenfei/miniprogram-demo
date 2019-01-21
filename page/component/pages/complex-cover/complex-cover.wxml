@@ -7,7 +7,18 @@
   </view>
   <view wx:if="{{page2}}" class="page2 page-body">
     <view class="leftView">
-      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" autoplay="{{true}}" controls="{{false}}">
+      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" 
+        binderror="videoErrorCallback"
+        danmu-list="{{danmuList}}"
+        enable-danmu
+        danmu-btn
+        show-progress='{{false}}'
+        enable-progress-gesture='{{false}}'
+        show-fullscreen-btn='{{false}}'
+        show-play-btn="{{false}}"
+        show-center-play-btn='{{false}}'
+        autoplay="{{true}}"
+        controls="{{false}}">
         <cover-view class="cover-view">
           <cover-view class="question-container">
               <cover-view class="question-body">
@@ -16,12 +27,12 @@
               </cover-view>
               <cover-view class="question-options">
                 <cover-view>
-                  <button type="default" bindtap="default">
+                  <button type="default" bindtap="options1">
                     A 3
                   </button>
                 </cover-view>
                 <cover-view>
-                  <button type="default" bindtap="default">
+                  <button type="default" bindtap="options2">
                     B 太难了，我不会
                   </button>
                 </cover-view>
@@ -34,24 +45,36 @@
     </view>
     <view class="rightView">
       <view class="rightTop">
-        rightTop
+        rightTop:{{topContent}}
       </view>
       <view class="rightBottom">
-        rightBottom
+        rightBottom:{{bottomContent}}
       </view>
     </view>
   </view>
   <view wx:if="{{page3}}" class="page3 page-body">
     <view class="leftView">
       <view class="rightTop">
-        rightTop
+        rightTop:{{topContent}}
       </view>
       <view class="rightBottom">
-        rightBottom
+        rightBottom:{{bottomContent}}
       </view>
     </view>
     <view class="rightView">
-      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" autoplay="{{true}}" controls="{{false}}">
+      <video id="myVideo" src="https://njfhoddiowm4yjdj.saybot.net/video/video/20180224140433873.mp4" 
+        binderror="videoErrorCallback"
+        danmu-list="{{danmuList}}"
+        enable-danmu
+        danmu-btn
+        show-progress='{{false}}'
+        enable-progress-gesture='{{false}}'
+        show-fullscreen-btn='{{false}}'
+        show-play-btn="{{false}}"
+        show-center-play-btn='{{false}}'
+        autoplay="{{true}}"
+        controls="{{false}}">
+
         <cover-view class="cover-view">
           <cover-view class="question-container">
               <cover-view class="question-body">
@@ -60,12 +83,12 @@
               </cover-view>
               <cover-view class="question-options">
                 <cover-view>
-                  <button type="default" bindtap="default">
+                  <button type="default" bindtap="options1">
                     A 3
                   </button>
                 </cover-view>
                 <cover-view>
-                  <button type="default" bindtap="default">
+                  <button type="default" bindtap="options2">
                     B 太难了，我不会
                   </button>
                 </cover-view>

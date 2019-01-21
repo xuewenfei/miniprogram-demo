@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    topContent: '',
+    bottomContent: '',
     page1: true,
     page2: false,
     page3: false,
@@ -14,7 +16,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => this.switchPage2(), 2000);
+    setTimeout(() => this.switchPage2(), 4000);
   },
   switchPage2: function () {
     this.setData({
@@ -22,7 +24,7 @@ Page({
       page2: true,
       page3: false
     })
-    setTimeout(() => this.switchPage3(), 4000);
+    setTimeout(() => this.switchPage3(), 8000);
   },
   switchPage3: function () {
     this.setData({
@@ -30,6 +32,19 @@ Page({
       page2: false,
       page3: true
     })
+  },
+  options1 () {
+    this.setData({
+      topContent: 'options1 clicked'
+    })
+    console.log('options1 clicked')
+  },
+  options2 () {
+    this.setData({
+      bottomContent: 'options2 clicked'
+    })
+    console.log('options1 clicked')
+    console.log('options2 clicked')
   },
 
   /**
