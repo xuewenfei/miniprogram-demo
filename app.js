@@ -1,8 +1,11 @@
 const openIdUrl = require('./config').openIdUrl
+import Es6Test from './util/es6Test.js'
 
 App({
   onLaunch(opts) {
     console.log('App Launch', opts)
+    const es6test = new Es6Test()
+    es6test.print()
   },
   onShow(opts) {
     console.log('App Show', opts)

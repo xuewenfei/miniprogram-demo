@@ -92,6 +92,7 @@
     "page/component/pages/map-styles/map-styles"
   ],
   "window": {
+    "pageOrientation": "landscape",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "演示",
     "navigationBarBackgroundColor": "#F8F8F8",
